@@ -5,7 +5,9 @@
 !.gitignore
 !CLAUDE.md
 !commands/
+!commands/**
 !skills/
+!skills/**
 
 # Ignore runtime/cache dirs
 debug/
