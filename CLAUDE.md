@@ -5,6 +5,12 @@ General rules
 Google Drive
 - "Daniel's Notes" is in the *Research folder. New entries are at the top. This is Daniel's main document for interim thoughts and daily updates.
 
+## Running Experiments
+- **No throwaway scripts.** Every Python script should be a committed file with a short docstring explaining its purpose.
+- Scripts should produce reproducible output (print statements, plots, artifacts).
+- Ideal form: a Python script runnable as a notebook that generates all plots/artifacts for the report.
+- Never inline one-off code in the shell; always write it to a file first.
+
 ## Writing Experiment Specs (GitHub Issues)
 
 Experiment specs should be complete enough that someone can execute without ambiguity. **When drafting specs, aggressively ask clarifying questions** - it's better to over-ask than to make assumptions that lead to wasted experiment runs. Good questions surface implicit assumptions about controls, edge cases, metrics thresholds, and success criteria.
