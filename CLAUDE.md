@@ -2,8 +2,35 @@ General rules
 - Be extremely concise. Sacrifice concision for the sake of grammar.
 - No need to tell me I am absolutely right.
 
+## Background Tasks
+- Prefer `run_in_background: true` for long-running commands (builds, tests, downloads, training runs)
+- Use background tasks when you can continue other work while waiting
+- Check background task output with `TaskOutput` or `tail` on the output file
+- Only block on commands when you need the result immediately
+
+## MCP Server Configuration
+- **Global MCPs go in `~/.claude.json`** under `mcpServers` key (NOT `.mcp.json`)
+- `.mcp.json` is only for project-scoped servers checked into git
+- Use `claude mcp add --scope user` to add globally, or edit `~/.claude.json` directly
+- Format:
+  ```json
+  {
+    "mcpServers": {
+      "my-server": {
+        "command": "...",
+        "args": ["..."],
+        "env": {}
+      }
+    }
+  }
+  ```
+
 Google Drive
 - "Daniel's Notes" is in the *Research folder. New entries are at the top. This is Daniel's main document for interim thoughts and daily updates.
+
+## Python Projects
+- Use `uv sync` to install dependencies
+- Add new dependencies with `uv add`
 
 ## Running Experiments
 - **No throwaway scripts.** Every Python script should be a committed file with a short docstring explaining its purpose.
