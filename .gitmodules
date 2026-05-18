@@ -1,0 +1,3 @@
+[submodule "skills/modaljob"]
+	path = skills/modaljob
+	url = git@github.com:dtch1997/modaljob.git

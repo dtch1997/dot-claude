@@ -4,7 +4,7 @@ General rules
 
 ## Background Tasks
 - Prefer `run_in_background: true` for long-running commands (builds, tests, downloads, training runs)
-- Use background tasks when you can continue other work while waiting
+- After submitting a background job, return control to the user immediately; do not block waiting for it to finish
 - Check background task output with `TaskOutput` or `tail` on the output file
 - Only block on commands when you need the result immediately
 

@@ -8,7 +8,26 @@
   },
   "enabledPlugins": {
     "document-skills@anthropic-agent-skills": true,
-    "ralph-loop@claude-plugins-official": true
+    "ralph-loop@claude-plugins-official": true,
+    "slack@claude-plugins-official": true,
+    "codex@openai-codex": true,
+    "warp@claude-code-warp": true
   },
-  "alwaysThinkingEnabled": true
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    },
+    "claude-code-warp": {
+      "source": {
+        "source": "github",
+        "repo": "warpdotdev/claude-code-warp"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "agentPushNotifEnabled": true
 }
