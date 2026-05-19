@@ -27,6 +27,7 @@
       }
     }
   },
+  "theme": "dark",
   "alwaysThinkingEnabled": true,
   "skipDangerousModePermissionPrompt": true,
   "agentPushNotifEnabled": true
